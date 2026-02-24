@@ -58,6 +58,8 @@ def signup():
 
 def signig():
     
+    connection=pymysql.connect(user="root",host="localhost",password="",database="farasisokogarden")
+
     # extracting user inputs from a form
     email=request.form["email"]
     password=request.form["password"]
@@ -92,6 +94,8 @@ def signig():
 
 
 # addproducts api
+    connection=pymysql.connect(user="root",host="localhost",password="",database="farasisokogarden")
+
 
 
 @app.route("/api/addproducts",methods=["POST"])
@@ -142,9 +146,6 @@ def getproductdetails():
     productdetails=cursor.fetchall()
 
     return(productdetails)
-
-
-
 
 
 import requests
@@ -212,9 +213,6 @@ def mpesa_payment():
         print(response.text) #
         # Give a Response
         return jsonify({"message": "An MPESA Prompt has been sent to Your Phone, Please Check & Complete Payment"})
-
-
-
 
 
 
