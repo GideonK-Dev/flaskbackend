@@ -78,7 +78,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `username`, `password`, `email`, `phone`) VALUES
-(32, 'Haziel', '1234', 'hazielgmail.com', '+2547 6928 8632'),
+(32, 'Haziel', '1234', 'hazielgmail.com', '+2547 8228 8632'),
 (33, 'Lael', '7468', 'laelgmail.com', '+2547 2628 6732'),
 (34, 'Lael', '7468', 'lael@gmail.com', '+2547 2628 6732');
 
